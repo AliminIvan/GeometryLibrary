@@ -24,5 +24,9 @@ public class GeometryUtils {
     public static boolean areAreasEqual(double area1, double area2) {
         return Double.compare(area1, area2) == 0;
     }
+
+    public static double convertCentimetersToMeters(double centimeters) {
+        return centimeters / 100;
+    }
 }
 
