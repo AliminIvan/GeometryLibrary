@@ -1,4 +1,4 @@
-package com.ivanalimin;
+package com.ivanalimin.geometry;
 
 public class Triangle implements Shape{
 
@@ -10,9 +10,13 @@ public class Triangle implements Shape{
     }
 
     public Triangle(double sideA, double sideB, double sideC) {
-        this.sideA = sideA;
-        this.sideB = sideB;
-        this.sideC = sideC;
+        if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+            this.sideA = sideA;
+            this.sideB = sideB;
+            this.sideC = sideC;
+        } else {
+            throw new IllegalArgumentException("The given sides do not form a valid triangle.");
+        }
     }
 
     @Override

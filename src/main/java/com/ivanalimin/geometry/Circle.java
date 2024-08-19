@@ -1,4 +1,4 @@
-package com.ivanalimin;
+package com.ivanalimin.geometry;
 
 public class Circle implements Shape {
 

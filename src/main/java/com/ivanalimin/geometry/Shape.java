@@ -1,4 +1,4 @@
-package com.ivanalimin;
+package com.ivanalimin.geometry;
 
 public interface Shape {
     double getArea();
